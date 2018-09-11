@@ -8,6 +8,13 @@
 
 import UIKit
 
-class NSTextCheckingResult_Ranges: NSObject {
-
+extension NSTextCheckingResult {
+    public var ranges: [NSRange] {
+        var result = [NSRange]()
+        for i in 0 ..< numberOfRanges {
+            let currentRange = range(at: i)
+            result.append(currentRange)
+        }
+        return result
+    }
 }

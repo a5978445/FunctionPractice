@@ -18,6 +18,9 @@
 		141C71772146613800D42ECE /* WordFrequencySort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C71762146613700D42ECE /* WordFrequencySort.swift */; };
 		141C71792147572300D42ECE /* UserNameFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C71782147572300D42ECE /* UserNameFilter.swift */; };
 		141C717B21475FD100D42ECE /* TraditionalStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C717A21475FD100D42ECE /* TraditionalStyleTests.swift */; };
+		141C717E2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C717D2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift */; };
+		141C71802147B59300D42ECE /* Array+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C717F2147B59300D42ECE /* Array+Convert.swift */; };
+		141C71822147B5A900D42ECE /* Dictionary+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C71812147B5A900D42ECE /* Dictionary+Convert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		141C71762146613700D42ECE /* WordFrequencySort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFrequencySort.swift; sourceTree = "<group>"; };
 		141C71782147572300D42ECE /* UserNameFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameFilter.swift; sourceTree = "<group>"; };
 		141C717A21475FD100D42ECE /* TraditionalStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraditionalStyleTests.swift; sourceTree = "<group>"; };
+		141C717D2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextCheckingResult+Ranges.swift"; sourceTree = "<group>"; };
+		141C717F2147B59300D42ECE /* Array+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Convert.swift"; sourceTree = "<group>"; };
+		141C71812147B5A900D42ECE /* Dictionary+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Convert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		1419E45021464D8300058C1F /* FunctionPractice */ = {
 			isa = PBXGroup;
 			children = (
+				141C717C2147B54E00D42ECE /* Extension */,
 				1419E47F21464D9200058C1F /* Core */,
 				1419E45121464D8300058C1F /* AppDelegate.swift */,
 				1419E45321464D8300058C1F /* ViewController.swift */,
@@ -143,6 +150,16 @@
 				141C71782147572300D42ECE /* UserNameFilter.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		141C717C2147B54E00D42ECE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				141C717D2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift */,
+				141C717F2147B59300D42ECE /* Array+Convert.swift */,
+				141C71812147B5A900D42ECE /* Dictionary+Convert.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +299,10 @@
 				1419E45421464D8300058C1F /* ViewController.swift in Sources */,
 				141C71792147572300D42ECE /* UserNameFilter.swift in Sources */,
 				141C71772146613800D42ECE /* WordFrequencySort.swift in Sources */,
+				141C71822147B5A900D42ECE /* Dictionary+Convert.swift in Sources */,
+				141C717E2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift in Sources */,
 				1419E45221464D8300058C1F /* AppDelegate.swift in Sources */,
+				141C71802147B59300D42ECE /* Array+Convert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

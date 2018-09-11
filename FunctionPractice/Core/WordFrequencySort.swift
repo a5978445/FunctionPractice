@@ -53,8 +53,8 @@ struct WordFrequencySort {
 
         var sortResult = matchResult.map { $0.ranges } // [[Range]]
             .flatMap { $0 } // [Range]
-            .map { input.subString(ofRange: $0).lowercased() }  //[String]
-            .filter { !prepositions.contains($0) } //[String]
+            .map { input.subString(ofRange: $0).lowercased() } // [String]
+            .filter { !prepositions.contains($0) } // [String]
             .convertToDictionary { (dictionary: inout Dictionary<String, Int>, word: String) in
                 if let referenceCounting = dictionary[word] {
                     dictionary[word] = referenceCounting + 1
@@ -80,37 +80,5 @@ extension String {
         let subRange = Range<String.Index>.init(uncheckedBounds: (lower: lower, upper: upper))
 
         return String(self[subRange])
-    }
-}
-
-extension NSTextCheckingResult {
-    var ranges: [NSRange] {
-        var result = [NSRange]()
-        for i in 0 ..< numberOfRanges {
-            let currentRange = range(at: i)
-            result.append(currentRange)
-        }
-        return result
-    }
-}
-
-extension Array {
-    func convertToDictionary<K, V>(_ operate: (inout Dictionary<K, V>, Array.Element) -> Void) -> Dictionary<K, V> {
-        var result = Dictionary<K, V>()
-        forEach { operate(&result, $0) }
-
-        return result
-    }
-}
-
-extension Dictionary {
-    func convertToArray<T>(_ operate: (inout Array<T>, Dictionary.Key, Dictionary.Value) -> Void) -> Array<T> {
-        var array = Array<T>()
-
-        forEach { key, value in
-            operate(&array, key, value)
-        }
-
-        return array
     }
 }

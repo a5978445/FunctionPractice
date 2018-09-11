@@ -8,6 +8,11 @@
 
 import UIKit
 
-class Array_Convert: NSObject {
+extension Array {
+    public func convertToDictionary<K, V>(_ operate: (inout Dictionary<K, V>, Array.Element) -> Void) -> Dictionary<K, V> {
+        var result = Dictionary<K, V>()
+        forEach { operate(&result, $0) }
 
+        return result
+    }
 }
