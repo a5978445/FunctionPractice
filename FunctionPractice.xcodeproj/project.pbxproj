@@ -21,6 +21,8 @@
 		141C717E2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C717D2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift */; };
 		141C71802147B59300D42ECE /* Array+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C717F2147B59300D42ECE /* Array+Convert.swift */; };
 		141C71822147B5A900D42ECE /* Dictionary+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C71812147B5A900D42ECE /* Dictionary+Convert.swift */; };
+		141C71842147BC8B00D42ECE /* FindPerfectNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C71832147BC8B00D42ECE /* FindPerfectNumber.swift */; };
+		141C71862147C2F400D42ECE /* FindPerfectNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C71852147C2F400D42ECE /* FindPerfectNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		141C717D2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextCheckingResult+Ranges.swift"; sourceTree = "<group>"; };
 		141C717F2147B59300D42ECE /* Array+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Convert.swift"; sourceTree = "<group>"; };
 		141C71812147B5A900D42ECE /* Dictionary+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Convert.swift"; sourceTree = "<group>"; };
+		141C71832147BC8B00D42ECE /* FindPerfectNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPerfectNumber.swift; sourceTree = "<group>"; };
+		141C71852147C2F400D42ECE /* FindPerfectNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPerfectNumberTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 				1419E46621464D8300058C1F /* FunctionPracticeTests.swift */,
 				1419E48021464EB000058C1F /* WordFrequencySortTests.swift */,
 				141C717A21475FD100D42ECE /* TraditionalStyleTests.swift */,
+				141C71852147C2F400D42ECE /* FindPerfectNumberTests.swift */,
 				1419E46821464D8300058C1F /* Info.plist */,
 			);
 			path = FunctionPracticeTests;
@@ -148,6 +153,7 @@
 			children = (
 				141C71762146613700D42ECE /* WordFrequencySort.swift */,
 				141C71782147572300D42ECE /* UserNameFilter.swift */,
+				141C71832147BC8B00D42ECE /* FindPerfectNumber.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				141C71772146613800D42ECE /* WordFrequencySort.swift in Sources */,
 				141C71822147B5A900D42ECE /* Dictionary+Convert.swift in Sources */,
 				141C717E2147B57C00D42ECE /* NSTextCheckingResult+Ranges.swift in Sources */,
+				141C71842147BC8B00D42ECE /* FindPerfectNumber.swift in Sources */,
 				1419E45221464D8300058C1F /* AppDelegate.swift in Sources */,
 				141C71802147B59300D42ECE /* Array+Convert.swift in Sources */,
 			);
@@ -311,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				141C717B21475FD100D42ECE /* TraditionalStyleTests.swift in Sources */,
+				141C71862147C2F400D42ECE /* FindPerfectNumberTests.swift in Sources */,
 				1419E48121464EB000058C1F /* WordFrequencySortTests.swift in Sources */,
 				1419E46721464D8300058C1F /* FunctionPracticeTests.swift in Sources */,
 			);
